@@ -1,0 +1,31 @@
+.header{
+  height: 50px;
+}
+a{
+  color: rgb(238, 229, 229);
+
+}
+.log-out{
+  margin-inline: 1rem;
+}
+.log-out, .Sign-in, .cart{
+  border: 1px solid rgba(0, 0, 0, 0.507);
+  border-radius: 40px ;
+  width: 90px;
+  text-align: center;
+}
+header{
+  height: 40px;
+  align-items: center;
+}
+.log-out:hover, .Sign-in:hover, .cart:hover{
+  background: rgb(15, 15, 136);
+}
+i{
+  color: rgba(0, 0, 0, 0.63);
+  margin-right: 0.3rem;
+}
+.cart{
+  background-color: rgba(0, 0, 0, 0.158);
+}
+

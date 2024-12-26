@@ -1,0 +1,9 @@
+<div>
+        <img class="card-img-top transform" src="{{data.image}}">
+       <h2>{{data.name}}</h2>
+       <p>{{data.desc}}</p>
+   <div class="d-flex justify-content-between">
+       <p style="background-color: aqua; border-radius: 10px;width: 60px;">{{data.price}} $</p>
+       <input type="submit" (click)="add()" value="add to cart" style="height: 27px; border-radius: 10px; background-color: rgb(88, 88, 221);">
+    </div>
+</div>

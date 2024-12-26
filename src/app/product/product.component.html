@@ -1,0 +1,84 @@
+<div class="bgImg">
+<app-header></app-header>
+
+
+  <div class="title d-flex">
+           <div>
+                <h3>lifestyle collection</h3>
+                <h1>MEN</h1>
+                <h1>SALE UP TO <span style="color: red;">30% OFF</span></h1>
+                <p>Get Free Shopping on order over $00.00</p>
+           </div>
+
+
+  </div>
+  <div *ngFor="let img of image" >
+    <img src="{{img.imqge}}" alt="" class="imganimation animation">
+</div>
+
+  </div>
+
+
+
+<main >
+  <div class="pt-5">
+
+    <div>
+  <select name="" id="" (change)="filter($event)" class="form-control w-25">
+      <option selected value="all">all</option>
+      <option value="{{item.id}}" *ngFor="let item of category ">{{item.name}}</option>
+  </select>
+</div>
+
+<section class="product row">
+  <article class="item col-md-3 col-sm-12" *ngFor="let item of product" >
+    <a href="">
+        <img class="img" src="{{item.image}}" alt="Denim Jeans" >
+    </a>
+
+    <div class="body">
+          <h1>{{item.title}}</h1>
+          <p>{{item.description}}</p>
+   </div>
+   <div class="px-3 mb-2 d-flex justify-content-between align-items-center">
+          <button class="btn btn-success">Add to Cart</button>
+          <span class="price">{{item.price}}</span>
+
+    </div>
+  </article>
+</section>
+</div>
+</main>
+
+<!----
+
+
+<div class="row">
+<div class="card col-md-3" style="width: 18rem;" *ngFor="let item of product">
+  <img class="card-img-top" src="{{item.image}}" height="40%" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{item.title}}</h5>
+    <p class="card-text">{{item.desc}}</p>
+    <p class="card-text">{{item.price}} $</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+-<div class="row mt-4">
+        <div class="card container col-md-4 " style="width: 18rem;" *ngFor="let item of product">
+              <div >
+                <img class="card-img-top transform" src={{item.image}} width="50%" height="50%">
+              <h2>{{item.title}}</h2>
+              <p style="height: 10%;width: 100%; ">{{item.description}}</p>
+              </div>
+          <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
+              <p style="background-color: aqua; border-radius: 10px;width: 60px;">{{item.price}} $</p>
+            <input type="submit" *ngIf="!Ifbool"  (click)="Ifbool=true" value="add to cart" style="height: 27px; border-radius: 10px; background-color: rgb(88, 88, 221);">
+          </div>
+          <input type="number" style="width: 60px;" [(ngModel)]="amouant" placeholder="Amount">
+              <button  (click)="addtocart(item)">Add</button>
+    </div>
+  </div>
+--->
+

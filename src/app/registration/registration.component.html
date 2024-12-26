@@ -1,0 +1,27 @@
+<form class="container" [formGroup]="formgrop" (ngSubmit)="resistration()">
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">User Name</label>
+    <div class="col-sm-10">
+      <input type="text"  class="form-control" placeholder="User Name" formControlName="userName">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="email@example.com" formControlName="email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label" >Phone Number</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" placeholder="06..." formControlName="phoneNumber">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label" >Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" placeholder="Password" formControlName="password">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary form-control">Login</button>
+</form>
